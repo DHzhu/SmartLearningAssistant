@@ -46,4 +46,15 @@
   - `VectorizationService`：`@Async` 异步文本切片与 pgvector 向量化
   - `KnowledgeController`：任务创建、状态查询 REST API
   - `knowledge_task` 状态机表（PENDING → PROCESSING → SUCCESS/FAILED）
-  - 前端拖拽上传组件 `FileUpload` 与任务状态轮询列表 `TaskList
+  - 前端拖拽上传组件 `FileUpload` 与任务状态轮询列表 `TaskList`
+
+## [0.3.0] - 2026-06-12
+
+### 新增
+- **Token 无锁并发计费中枢**：基于 Redis Lua 脚本的高并发防超卖计费引擎
+  - `BillingService`：Lua 原子扣费脚本，余额查询-判断-扣减一步完成
+  - `@Scheduled` 定时同步：Redis 账本批量持久化至 PostgreSQL
+  - `BillingController`：余额查询、充值、扣费历史 REST API
+  - `sys_user_quota` 与 `sys_billing_log` 数据表
+  - 前端配额看板 `BillingPage`：余额展示、充值、扣费记录
+  - `QuotaCard` 全局余额卡片，低余额预警提示
