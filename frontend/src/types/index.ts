@@ -27,3 +27,12 @@ export interface KnowledgeTask {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface BillingLog {
+  id: number;
+  userId: number;
+  amount: number;
+  type: 'DEDUCT' | 'RECHARGE';
+  description: string;
+  createdAt: string;
+}

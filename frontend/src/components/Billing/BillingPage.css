@@ -1,0 +1,102 @@
+.billing-page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.billing-page__balance-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 1.5rem 0 2rem;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+}
+
+.billing-page__balance {
+  display: flex;
+  flex-direction: column;
+}
+
+.billing-page__balance-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.billing-page__balance-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.billing-page__recharge {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.billing-page__recharge input {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 150px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.billing-page__recharge button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent-color);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.billing-page__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.billing-page__table th,
+.billing-page__table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.billing-page__table th {
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.billing-type {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.billing-type--deduct {
+  background: var(--error-bg);
+  color: var(--error-text);
+}
+
+.billing-type--recharge {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.amount--deduct {
+  color: var(--error-text);
+  font-weight: 600;
+}
+
+.amount--recharge {
+  color: #059669;
+  font-weight: 600;
+}

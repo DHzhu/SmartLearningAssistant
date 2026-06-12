@@ -1,0 +1,28 @@
+.quota-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  font-size: 0.875rem;
+}
+
+.quota-card__label {
+  color: var(--text-secondary);
+}
+
+.quota-card__value {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.quota-card--low {
+  border: 1px solid var(--error-text);
+}
+
+.quota-card__warning {
+  color: var(--error-text);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
