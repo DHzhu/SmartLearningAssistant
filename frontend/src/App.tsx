@@ -4,6 +4,7 @@ import { LoginPage } from './components/Login/LoginPage';
 import { RequireAuth } from './components/Common/RequireAuth';
 import { KnowledgePage } from './components/Knowledge/KnowledgePage';
 import { BillingPage } from './components/Billing/BillingPage';
+import { ChatPage } from './components/Chat/ChatPage';
 
 function Dashboard() {
   return <div style={{ padding: '2rem' }}><h1>Dashboard</h1><p>Welcome to Smart Learning Assistant</p></div>;
@@ -48,6 +49,14 @@ export function App() {
             element={
               <RequireAuth>
                 <BillingPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="/chat"
+            element={
+              <RequireAuth>
+                <ChatPage />
               </RequireAuth>
             }
           />
