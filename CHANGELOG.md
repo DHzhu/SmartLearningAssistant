@@ -58,3 +58,13 @@
   - `sys_user_quota` 与 `sys_billing_log` 数据表
   - 前端配额看板 `BillingPage`：余额展示、充值、扣费记录
   - `QuotaCard` 全局余额卡片，低余额预警提示
+
+## [0.4.0] - 2026-06-12
+
+### 新增
+- **RAG 智能对话引擎**：基于 Spring AI 的多租户隔离检索增强对话
+  - `RagService`：pgvector 向量检索 + 租户级数据隔离
+  - `ChatController`：SSE 流式对话端点 `/api/chat/stream`
+  - 流结束自动扣费：基于 Usage 元数据触发 Redis Lua 扣费
+  - 前端 `ChatPage`：打字机效果对话界面、SSE 流式接收
+  - 余额不足拦截：对话前检查余额，不足时提示充值

@@ -1,8 +1,8 @@
 {
-  "id": "track_rag_engine",
+  "id": "track_rag_engine_20260612",
   "title": "RAG 智能对话引擎",
   "description": "开发前端打字机效果对话界面，配合后端实现 RAG 混合检索、SSE 流式对话输出以及大模型 Usage 扣费闭环。",
-  "status": "todo",
+  "status": "done",
   "created_at": "2026-06-11",
   "priority": "high",
   "tags": ["rag", "sse", "gemini", "chatclient"]

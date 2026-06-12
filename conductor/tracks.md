@@ -20,10 +20,7 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 
 ## ⏳ Next Up
 
-- [ ] **Track: RAG 智能对话引擎 (track_rag_engine)** [todo]
-  *Link: [./tracks/track_rag_engine/](./tracks/track_rag_engine/)*
-  *Description: 开发前端打字机效果对话界面，配合后端实现 RAG 混合检索、SSE 流式对话输出以及大模型 Usage 扣费闭环。*
-  *Created: 2026-06-11* | *Priority: High*
+(All tracks completed)
 
 ## ✅ Archive
 
@@ -40,4 +37,9 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 - [x] **Track: Token 无锁并发计费中枢 (track_billing_20260612)** [done]
   *Link: [./archive/track_billing_20260612/](./archive/track_billing_20260612/)*
   *Description: 基于 Redis Lua 脚本实现高并发防超卖计费引擎，完成前端配额与账单看板，并定时异步持久化余额。*
+  *Created: 2026-06-11* | *Priority: High*
+
+- [x] **Track: RAG 智能对话引擎 (track_rag_engine_20260612)** [done]
+  *Link: [./archive/track_rag_engine_20260612/](./archive/track_rag_engine_20260612/)*
+  *Description: 开发前端打字机效果对话界面，配合后端实现 RAG 混合检索、SSE 流式对话输出以及大模型 Usage 扣费闭环。*
   *Created: 2026-06-11* | *Priority: High*
