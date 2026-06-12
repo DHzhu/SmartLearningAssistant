@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { LoginPage } from './components/Login/LoginPage';
 import { RequireAuth } from './components/Common/RequireAuth';
+import { KnowledgePage } from './components/Knowledge/KnowledgePage';
 
 function Dashboard() {
   return <div style={{ padding: '2rem' }}><h1>Dashboard</h1><p>Welcome to Smart Learning Assistant</p></div>;
@@ -30,6 +31,14 @@ export function App() {
             element={
               <RequireAuth roles={['ROLE_ADMIN']}>
                 <AdminPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="/knowledge"
+            element={
+              <RequireAuth roles={['ROLE_ADMIN']}>
+                <KnowledgePage />
               </RequireAuth>
             }
           />
