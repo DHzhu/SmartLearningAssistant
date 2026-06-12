@@ -1,0 +1,9 @@
+{
+  "id": "track_rbac",
+  "title": "RBAC 角色权限与安全接入",
+  "description": "实现基于 JWT 的身份认证与方法级隔离，并完成前端登录页面与路由拦截，确保多租户安全接入。",
+  "status": "in_progress",
+  "created_at": "2026-06-11",
+  "priority": "high",
+  "tags": ["security", "auth", "rbac"]
+}

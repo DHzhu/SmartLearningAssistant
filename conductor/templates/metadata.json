@@ -1,0 +1,16 @@
+{
+  "id": "{{TRACK_ID}}",
+  "title": "{{TITLE}}",
+  "description": "[Brief description]",
+  "status": "in_progress",
+  "created_at": "{{DATE}}",
+  "priority": "medium",
+  "tags": []
+}
+
+<!-- 
+Archive Note:
+When the track is finished, you MUST:
+1. Update status to "done".
+2. Update id to include date suffix: {{TRACK_ID}}_YYYYMMDD.
+-->

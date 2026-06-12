@@ -1,0 +1,40 @@
+# --- Conductor & Flow ---
+conductor/archive/
+conductor/metadata.schema.json
+conductor/setup_state.json
+conductor/workflow.md
+conductor/index.md
+
+# --- Gradle & Build ---
+.gradle/
+build/
+*/build/
+bin/
+out/
+target/
+*.class
+*.pyc
+*.kts.compiled
+*.jar
+*.war
+*.zip
+
+# --- IDE & Platform ---
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.intellijPlatform/
+.run/
+.kotlin/
+.qodana/
+
+# --- Safety & Security ---
+.git/
+.claude/
+.gemini/
+.env
+*.log
+*.tmp
+.DS_Store

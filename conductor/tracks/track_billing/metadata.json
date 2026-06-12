@@ -1,0 +1,9 @@
+{
+  "id": "track_billing",
+  "title": "Token 无锁并发计费中枢",
+  "description": "基于 Redis Lua 脚本实现高并发防超卖计费引擎，完成前端配额与账单看板，并定时异步持久化余额。",
+  "status": "todo",
+  "created_at": "2026-06-11",
+  "priority": "high",
+  "tags": ["billing", "redis", "lua", "concurrency"]
+}

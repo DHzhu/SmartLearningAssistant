@@ -1,0 +1,9 @@
+{
+  "id": "track_knowledge_base",
+  "title": "异步知识库管理中心",
+  "description": "开发管理员资料上传与状态轮询界面，实现 S3 原始语料直传、异步文本切分向量化与 pgvector 写入。",
+  "status": "todo",
+  "created_at": "2026-06-11",
+  "priority": "high",
+  "tags": ["knowledge-base", "etl", "pgvector", "s3"]
+}
