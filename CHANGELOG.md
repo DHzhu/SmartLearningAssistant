@@ -37,3 +37,13 @@
 - **测试覆盖**：
   - 后端：16 个 JUnit 测试，覆盖率 93.4%
   - 前端：9 个 Vitest 测试，覆盖率 84.59%
+
+## [0.2.0] - 2026-06-12
+
+### 新增
+- **异步知识库管理中心**：基于 Spring AI 2.0.0-RC2 + S3 的语料 ETL 管道
+  - `S3Service`：S3 预签名 URL 生成，前端直传对象存储
+  - `VectorizationService`：`@Async` 异步文本切片与 pgvector 向量化
+  - `KnowledgeController`：任务创建、状态查询 REST API
+  - `knowledge_task` 状态机表（PENDING → PROCESSING → SUCCESS/FAILED）
+  - 前端拖拽上传组件 `FileUpload` 与任务状态轮询列表 `TaskList

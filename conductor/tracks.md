@@ -20,11 +20,6 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 
 ## ⏳ Next Up
 
-- [ ] **Track: 异步知识库管理中心 (track_knowledge_base)** [todo]
-  *Link: [./tracks/track_knowledge_base/](./tracks/track_knowledge_base/)*
-  *Description: 开发管理员资料上传与状态轮询界面，实现 S3 原始语料直传、异步文本切分向量化与 pgvector 写入。*
-  *Created: 2026-06-11* | *Priority: High*
-
 - [ ] **Track: Token 无锁并发计费中枢 (track_billing)** [todo]
   *Link: [./tracks/track_billing/](./tracks/track_billing/)*
   *Description: 基于 Redis Lua 脚本实现高并发防超卖计费引擎，完成前端配额与账单看板，并定时异步持久化余额。*
@@ -40,4 +35,9 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 - [x] **Track: RBAC 角色权限与安全接入 (track_rbac_20260611)** [done]
   *Link: [./archive/track_rbac_20260611/](./archive/track_rbac_20260611/)*
   *Description: 实现基于 JWT 的身份认证与方法级隔离，并完成前端登录页面与路由拦截，确保多租户安全接入。*
+  *Created: 2026-06-11* | *Priority: High*
+
+- [x] **Track: 异步知识库管理中心 (track_knowledge_base_20260612)** [done]
+  *Link: [./archive/track_knowledge_base_20260612/](./archive/track_knowledge_base_20260612/)*
+  *Description: 开发管理员资料上传与状态轮询界面，实现 S3 原始语料直传、异步文本切分向量化与 pgvector 写入。*
   *Created: 2026-06-11* | *Priority: High*
