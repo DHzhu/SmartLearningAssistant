@@ -16,10 +16,7 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 
 ## 🚀 Active Tracks
 
-- [~] **Track: RBAC 角色权限与安全接入 (track_rbac)** [in_progress]
-  *Link: [./tracks/track_rbac/](./tracks/track_rbac/)*
-  *Description: 实现基于 JWT 的身份认证与方法级隔离，并完成前端登录页面与路由拦截，确保多租户安全接入。*
-  *Created: 2026-06-11* | *Priority: High*
+(No active tracks)
 
 ## ⏳ Next Up
 
@@ -40,4 +37,7 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 
 ## ✅ Archive
 
-(Tracks moved here upon completion)
+- [x] **Track: RBAC 角色权限与安全接入 (track_rbac_20260611)** [done]
+  *Link: [./archive/track_rbac_20260611/](./archive/track_rbac_20260611/)*
+  *Description: 实现基于 JWT 的身份认证与方法级隔离，并完成前端登录页面与路由拦截，确保多租户安全接入。*
+  *Created: 2026-06-11* | *Priority: High*

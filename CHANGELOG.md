@@ -17,3 +17,23 @@
 
 ### 移除
 - (在此记录已移除的功能)
+
+## [0.1.0] - 2026-06-11
+
+### 新增
+- **后端 RBAC 鉴权系统**：基于 Spring Boot 4.1 + Spring Security 的无状态 JWT 鉴权
+  - `JwtTokenProvider`：JWT 签发、解析与验签
+  - `JwtAuthenticationFilter`：无状态请求拦截过滤器
+  - `SecurityConfig`：禁用 Session，启用方法级安全注解
+  - `AuthController`：`/api/auth/login` 与 `/api/auth/register` 端点
+  - `AdminController`：`@PreAuthorize("hasRole('ADMIN')")` 方法级拦截
+  - `sys_user` 数据表与 Flyway 迁移脚本
+  - 默认管理员账户初始化（admin/admin123）
+- **前端登录与路由守护**：React 19 + TypeScript + Vite
+  - 登录页面：暗黑模式自适应、高对比度无障碍设计
+  - API 客户端：统一请求封装，自动携带 JWT Header
+  - `AuthContext`：用户认证状态管理
+  - `RequireAuth`：路由守卫组件，支持角色级拦截
+- **测试覆盖**：
+  - 后端：16 个 JUnit 测试，覆盖率 93.4%
+  - 前端：9 个 Vitest 测试，覆盖率 84.59%
