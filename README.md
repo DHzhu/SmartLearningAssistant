@@ -29,7 +29,7 @@
 
 | 层级 | 技术选型 |
 |------|---------|
-| 后端框架 | Java 21, Spring Boot 4.1, Spring Security, Spring AI 2.0.0-RC2 |
+| 后端框架 | Java 21, Spring Boot 4.1, Spring Security, Spring AI 2.0.0 |
 | 数据库 | PostgreSQL 17 + pgvector, Redis 7.x |
 | 对象存储 | S3 兼容存储 (MinIO / AWS S3) |
 | 大模型 | Google Gemini (Embedding + Chat) |
