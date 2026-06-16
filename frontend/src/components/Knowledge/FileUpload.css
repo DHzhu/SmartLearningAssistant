@@ -1,50 +1,89 @@
+/* File Upload - Refined Futurism Design */
 .file-upload {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 160px;
-  padding: 2rem;
-  border: 2px dashed var(--border-color);
-  border-radius: 12px;
+  min-height: 180px;
+  padding: 2.5rem;
+  border: 2px dashed var(--border-default);
+  border-radius: 16px;
   cursor: pointer;
-  transition: all 0.2s;
-  background: var(--bg-secondary);
+  transition: all var(--transition-base);
+  background: rgba(17, 24, 39, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.file-upload::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--accent-teal-glow) 0%, var(--accent-amber-glow) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  pointer-events: none;
 }
 
 .file-upload:hover,
 .file-upload--dragging {
-  border-color: var(--accent-color);
-  background: var(--accent-ring);
+  border-color: var(--accent-teal);
+  background: rgba(20, 184, 166, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(20, 184, 166, 0.2);
+}
+
+.file-upload:hover::before,
+.file-upload--dragging::before {
+  opacity: 0.3;
 }
 
 .file-upload__prompt {
   text-align: center;
-  color: var(--text-secondary);
+  color: var(--text-primary);
+  position: relative;
+  z-index: 1;
 }
 
 .file-upload__icon {
-  font-size: 2.5rem;
+  font-size: 3rem;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.3));
 }
 
 .file-upload__hint {
-  font-size: 0.8rem;
-  margin-top: 0.5rem;
-  opacity: 0.7;
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
 }
 
 .file-upload__status {
-  font-size: 1rem;
-  color: var(--accent-color);
-  font-weight: 500;
+  font-size: 1.125rem;
+  color: var(--accent-amber);
+  font-weight: 600;
+  font-family: 'Space Grotesk', sans-serif;
+  text-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
 }
 
 .file-upload__error {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
   background: var(--error-bg);
-  color: var(--error-text);
-  border-radius: 8px;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: var(--error-base);
+  border-radius: 12px;
   font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  animation: slideInLeft 0.3s var(--transition-base);
+}
+
+.file-upload__error::before {
+  content: '⚠';
+  font-size: 1rem;
 }

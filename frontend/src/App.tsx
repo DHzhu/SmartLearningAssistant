@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
+import { Navbar } from './components/Common/Navbar';
 import { LoginPage } from './components/Login/LoginPage';
 import { RequireAuth } from './components/Common/RequireAuth';
 import { KnowledgePage } from './components/Knowledge/KnowledgePage';
@@ -7,27 +8,30 @@ import { BillingPage } from './components/Billing/BillingPage';
 import { ChatPage } from './components/Chat/ChatPage';
 
 function Dashboard() {
-  return <div style={{ padding: '2rem' }}><h1>Dashboard</h1><p>Welcome to Smart Learning Assistant</p></div>;
+  return (
+    <div style={{ padding: '2rem' }}>
+      <h1>Dashboard</h1>
+      <p>Welcome to Smart Learning Assistant</p>
+    </div>
+  );
 }
 
 function AdminPage() {
-  return <div style={{ padding: '2rem' }}><h1>Admin Panel</h1><p>Admin-only content</p></div>;
+  return (
+    <div style={{ padding: '2rem' }}>
+      <h1>Admin Panel</h1>
+      <p>Admin-only content</p>
+    </div>
+  );
 }
 
-export function App() {
+function AppLayout() {
   return (
-    <BrowserRouter>
-      <AuthProvider>
+    <>
+      <Navbar />
+      <main style={{ paddingTop: '70px' }}>
         <Routes>
-          <Route path="/login" element={<LoginPage />} />
-          <Route
-            path="/"
-            element={
-              <RequireAuth>
-                <Dashboard />
-              </RequireAuth>
-            }
-          />
+          <Route path="/" element={<Dashboard />} />
           <Route
             path="/admin"
             element={
@@ -61,6 +65,19 @@ export function App() {
             }
           />
           <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </main>
+    </>
+  );
+}
+
+export function App() {
+  return (
+    <BrowserRouter>
+      <AuthProvider>
+        <Routes>
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/*" element={<RequireAuth><AppLayout /></RequireAuth>} />
         </Routes>
       </AuthProvider>
     </BrowserRouter>

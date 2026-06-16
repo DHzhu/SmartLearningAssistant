@@ -12,6 +12,7 @@
 ## Visual Identity
 - Follow platform-native design systems (e.g., IntelliJ, Web-native).
 - **Dark Mode Support**: Mandatory.
+- **Frontend Design**: If frontend development or UI/UX design is involved, prioritize activating and using the `frontend-design` skill to ensure premium aesthetics and avoid generic defaults.
 
 ## Functional Constraints
 - **Performance**: Operations must not block the main/UI thread.

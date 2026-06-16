@@ -1,28 +1,76 @@
+/* Quota Card - Refined Futurism Design */
 .quota-card {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: var(--bg-secondary);
-  border-radius: 8px;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(26, 35, 50, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
   font-size: 0.875rem;
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+.quota-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--accent-amber), var(--accent-teal));
+  opacity: 0.8;
+}
+
+.quota-card:hover {
+  border-color: var(--border-strong);
+  background: rgba(26, 35, 50, 0.8);
 }
 
 .quota-card__label {
   color: var(--text-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
 }
 
 .quota-card__value {
   font-weight: 700;
-  color: var(--text-primary);
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--accent-amber);
+  text-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+  font-size: 1rem;
 }
 
 .quota-card--low {
-  border: 1px solid var(--error-text);
+  border-color: rgba(239, 68, 68, 0.3);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.quota-card--low::before {
+  background: var(--error-base);
+}
+
+.quota-card--low .quota-card__value {
+  color: var(--error-base);
+  text-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
 }
 
 .quota-card__warning {
-  color: var(--error-text);
+  color: var(--error-base);
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.quota-card__warning::before {
+  content: '⚠';
 }
