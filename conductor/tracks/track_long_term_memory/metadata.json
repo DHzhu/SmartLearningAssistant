@@ -1,0 +1,9 @@
+{
+  "id": "track_long_term_memory",
+  "title": "Long-term Memory & Persona",
+  "description": "Build a background agent to extract user preferences and maintain long-term personalized memory.",
+  "status": "in_progress",
+  "created_at": "2026-08-17",
+  "priority": "medium",
+  "tags": []
+}

@@ -7,10 +7,3 @@
   "priority": "medium",
   "tags": []
 }
-
-<!-- 
-Archive Note:
-When the track is finished, you MUST:
-1. Update status to "done".
-2. Update id to include date suffix: {{TRACK_ID}}_YYYYMMDD.
--->

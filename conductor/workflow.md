@@ -33,7 +33,9 @@ When starting a new Track:
    - **Checks**: Execute `./mvnw compile` for backend, and `npm run lint` && `npx tsc --noEmit` (in frontend dir) for frontend.
 5. **Skill-based Delivery (git-commit)**: 
    - **Trigger**: Agent **MUST** trigger this when a **logical milestone** is reached OR a maximum of **3 sub-tasks** are completed but not yet committed.
-   - **Action**: Invoke `activate_skill("git-commit")`. This tool will update `plan.md` with SHAs and mark tasks as `[x]`.
+   - **Action**: Run the automated commit script (`scripts/commit.sh` within the `git-commit` skill directory) with message: `"<type>(<scope>): <Chinese description>"`. 
+     - **Task ID Rule**: For any track commit, you **MUST** append the task ID(s) to the message (e.g. `[task-1]` or `[task-1, task-2]`) to trigger `plan.md` status synchronization. Commits without task ID(s) are automatically treated as non-track commits.
+     - **Format Requirement**: All tasks in `plan.md` must follow the format `- [ ] **task-N**: description`. The script selectively tags finished tasks using these IDs.
 
 ## 4. Context-Aware Quality Gates (Auto-Validation)
 *The Agent must self-verify all requirements before delivery:*

@@ -1,0 +1,9 @@
+{
+  "id": "track_agentic_workflow",
+  "title": "Agentic Workflow & Tool Calling",
+  "description": "Implement Function Calling and Multi-Agent router to transition from simple RAG to an active agent.",
+  "status": "in_progress",
+  "created_at": "2026-08-17",
+  "priority": "medium",
+  "tags": []
+}

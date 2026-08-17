@@ -1,4 +1,4 @@
-# Implementation Plan: {{TITLE}}
+# Implementation Plan: Advanced RAG & Reranker
 
 ## 1. Research & Analysis
 - [ ] **task-1**: Investigate existing implementations and dependencies. [SHA: ]

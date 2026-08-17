@@ -1,0 +1,9 @@
+{
+  "id": "track_llmops",
+  "title": "LLMOps & Observability",
+  "description": "Integrate tracing tools like Langfuse or LangSmith to monitor LLM performance and hallucination rates.",
+  "status": "in_progress",
+  "created_at": "2026-08-17",
+  "priority": "medium",
+  "tags": []
+}

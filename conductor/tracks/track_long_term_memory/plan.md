@@ -1,4 +1,4 @@
-# Implementation Plan: {{TITLE}}
+# Implementation Plan: Long-term Memory & Persona
 
 ## 1. Research & Analysis
 - [ ] **task-1**: Investigate existing implementations and dependencies. [SHA: ]

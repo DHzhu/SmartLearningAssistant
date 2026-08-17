@@ -16,7 +16,30 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 
 ## 🚀 Active Tracks
 
-(No active tracks)
+- [ ] **Track: Agentic Workflow & Tool Calling (track_agentic_workflow)** [in_progress]
+  *Link: [./tracks/track_agentic_workflow/](./tracks/track_agentic_workflow/)*
+  *Description: Implement Function Calling and Multi-Agent router to transition from simple RAG to an active agent.*
+  *Created: 2026-08-17* | *Priority: Medium*
+
+- [ ] **Track: Advanced RAG & Reranker (track_advanced_rag)** [in_progress]
+  *Link: [./tracks/track_advanced_rag/](./tracks/track_advanced_rag/)*
+  *Description: Integrate BGE-Reranker, GraphRAG, and Semantic Chunking to improve retrieval relevance.*
+  *Created: 2026-08-17* | *Priority: Medium*
+
+- [ ] **Track: Long-term Memory & Persona (track_long_term_memory)** [in_progress]
+  *Link: [./tracks/track_long_term_memory/](./tracks/track_long_term_memory/)*
+  *Description: Build a background agent to extract user preferences and maintain long-term personalized memory.*
+  *Created: 2026-08-17* | *Priority: Medium*
+
+- [ ] **Track: LLMOps & Observability (track_llmops)** [in_progress]
+  *Link: [./tracks/track_llmops/](./tracks/track_llmops/)*
+  *Description: Integrate tracing tools like Langfuse or LangSmith to monitor LLM performance and hallucination rates.*
+  *Created: 2026-08-17* | *Priority: Medium*
+
+- [ ] **Track: Infrastructure Optimization & MQ (track_infra_optimization)** [in_progress]
+  *Link: [./tracks/track_infra_optimization/](./tracks/track_infra_optimization/)*
+  *Description: Decouple document parsing with RabbitMQ/Kafka and implement final consistency checks for billing.*
+  *Created: 2026-08-17* | *Priority: Medium*
 
 ## ⏳ Next Up
 

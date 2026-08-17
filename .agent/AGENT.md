@@ -19,7 +19,7 @@
 - **Lifecycle**: Agent **MUST** follow `workflow.md` for all tasks. All progress and state tracking **MUST** be maintained in physical files (`tracks.md`, `plan.md`, `metadata.json`).
 - **Prep**: Perform "pre-flight" check (read_file/grep_search) before any modifications.
 - **Compliance**: Newly created files MUST strictly adhere to the requirements in this specification. Historical archives may contain errors; imitating them is prohibited.
-- **Commits**: Code changes **MUST** use `activate_skill("git-commit")`. Format **MUST** be: `<type>(<scope>): <Chinese description>`. Body text, `Co-Authored-By`, or feature lists are **STRICTLY FORBIDDEN**.
+- **Commits**: Code changes **MUST** use the git-commit skill script (scripts/commit.sh within the skill directory). Format **MUST** be: `<type>(<scope>): <Chinese description>`. Body text, `Co-Authored-By`, or feature lists are **STRICTLY FORBIDDEN**. (The script automatically handles Plan synchronization, Git Notes auditing, and supports Non-Track task downgrading. For track commits, the task ID e.g. `[task-1]` must be appended to the message; commits without task IDs will be treated as non-track commits and bypass plan synchronization).
 
 ## 4. Quality Gates (DoD)
 A task is **DONE** ONLY when:
