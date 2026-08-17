@@ -58,8 +58,19 @@ class RagServiceTest {
     }
 
     @Test
+    void shouldBuildPromptWithContextAndPersona() {
+        Document doc = new Document("Spring AI is awesome", Map.of("filename", "intro.txt"));
+        String persona = "【学生个性化档案】• [WEAKNESS] 概念理解薄弱";
+        String prompt = ragService.buildPrompt("what is spring ai?", List.of(doc), persona);
+
+        assertTrue(prompt.contains("Spring AI is awesome"));
+        assertTrue(prompt.contains("概念理解薄弱"));
+        assertTrue(prompt.contains("what is spring ai?"));
+    }
+
+    @Test
     void shouldBuildRawPromptWhenContextEmpty() {
         String prompt = ragService.buildPrompt("simple query", List.of());
-        assertEquals("simple query", prompt);
+        assertTrue(prompt.contains("simple query"));
     }
 }

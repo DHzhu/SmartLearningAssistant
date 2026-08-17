@@ -58,11 +58,20 @@ public class RagService {
     }
 
     public String buildPrompt(String query, List<Document> context) {
-        if (context.isEmpty()) {
-            return query;
+        return buildPrompt(query, context, "");
+    }
+
+    public String buildPrompt(String query, List<Document> context, String personaPrompt) {
+        StringBuilder sb = new StringBuilder();
+        if (personaPrompt != null && !personaPrompt.isBlank()) {
+            sb.append(personaPrompt).append("\n\n");
         }
 
-        StringBuilder sb = new StringBuilder();
+        if (context.isEmpty()) {
+            sb.append("用户问题：").append(query);
+            return sb.toString();
+        }
+
         sb.append("基于以下参考资料回答用户问题。如果参考资料中没有相关信息，请说明。\n\n");
         sb.append("参考资料：\n");
 
