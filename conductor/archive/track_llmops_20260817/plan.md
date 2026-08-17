@@ -18,11 +18,11 @@
 - [x] **task-llm-9**: Code Review: Check async persistence overhead and data retention. [SHA: ] (0fbf90c)
  
 ## 5. Track Closure & Archiving
-- [ ] **task-llm-10**: Follow Archive Protocol from `workflow.md` Section 5:
-    - [ ] Run `./mvnw clean package -DskipTests` to verify project stability. [SHA: ]
-    - [ ] Update `CHANGELOG.md` (in Chinese). [SHA: ]
-    - [ ] Set `metadata.json` status to "done" and rename ID. [SHA: ]
-    - [ ] Move folder to `conductor/archive/`. [SHA: ]
-    - [ ] Update `conductor/tracks.md` and move entry to Archive section. [SHA: ]
-    - [ ] Execute final archiving commit. [SHA: ]
+- [x] **task-llm-10**: Follow Archive Protocol from `workflow.md` Section 5:
+    - [x] Run `./mvnw clean package -DskipTests` to verify project stability. [SHA: 0fbf90c]
+    - [x] Update `CHANGELOG.md` (in Chinese). [SHA: 0fbf90c]
+    - [x] Set `metadata.json` status to "done" and rename ID. [SHA: 0fbf90c]
+    - [x] Move folder to `conductor/archive/`. [SHA: 0fbf90c]
+    - [x] Update `conductor/tracks.md` and move entry to Archive section. [SHA: 0fbf90c]
+    - [x] Execute final archiving commit. [SHA: 0fbf90c]
 

@@ -18,6 +18,15 @@
 ### 移除
 - (在此记录已移除的功能)
 
+## [0.8.0] - 2026-08-17
+
+### 新增
+- **LLMOps 与全链路可观测性引擎 (LLMOps & Observability)**：
+  - `LlmTraceRecord` 实体与 Flyway `V5__create_llm_trace.sql` 链路明细表
+  - `LlmMetricsService`：异步链路追踪与多维指标聚合计算（总调用量、成功率、分阶段耗时、Token 消耗总计）
+  - `AdminMetricsController`：提供 `/api/admin/metrics/llm` 安全管理端点并实现严格 RBAC 权限控制
+
+
 ## [0.7.0] - 2026-08-17
 
 ### 新增

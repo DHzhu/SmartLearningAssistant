@@ -16,11 +16,6 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 
 ## 🚀 Active Tracks
 
-- [ ] **Track: LLMOps & Observability (track_llmops)** [in_progress]
-  *Link: [./tracks/track_llmops/](./tracks/track_llmops/)*
-  *Description: Integrate tracing tools like Langfuse or LangSmith to monitor LLM performance and hallucination rates.*
-  *Created: 2026-08-17* | *Priority: Medium*
-
 - [ ] **Track: Infrastructure Optimization & MQ (track_infra_optimization)** [in_progress]
   *Link: [./tracks/track_infra_optimization/](./tracks/track_infra_optimization/)*
   *Description: Decouple document parsing with RabbitMQ/Kafka and implement final consistency checks for billing.*
@@ -31,6 +26,11 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 (All tracks completed)
 
 ## ✅ Archive
+
+- [x] **Track: LLMOps & Observability (track_llmops_20260817)** [done]
+  *Link: [./archive/track_llmops_20260817/](./archive/track_llmops_20260817/)*
+  *Description: Integrate tracing tools like Langfuse or LangSmith to monitor LLM performance and hallucination rates.*
+  *Created: 2026-08-17* | *Priority: Medium*
 
 - [x] **Track: Long-term Memory & Persona (track_long_term_memory_20260817)** [done]
   *Link: [./archive/track_long_term_memory_20260817/](./archive/track_long_term_memory_20260817/)*
