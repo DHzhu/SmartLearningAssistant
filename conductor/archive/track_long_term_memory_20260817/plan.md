@@ -18,11 +18,11 @@
 - [x] **task-mem-9**: Code Review: Check indexing and prompt token overhead. [SHA: ] (68b4fd8)
  
 ## 5. Track Closure & Archiving
-- [ ] **task-mem-10**: Follow Archive Protocol from `workflow.md` Section 5:
-    - [ ] Run `./mvnw clean package -DskipTests` to verify project stability. [SHA: ]
-    - [ ] Update `CHANGELOG.md` (in Chinese). [SHA: ]
-    - [ ] Set `metadata.json` status to "done" and rename ID. [SHA: ]
-    - [ ] Move folder to `conductor/archive/`. [SHA: ]
-    - [ ] Update `conductor/tracks.md` and move entry to Archive section. [SHA: ]
-    - [ ] Execute final archiving commit. [SHA: ]
+- [x] **task-mem-10**: Follow Archive Protocol from `workflow.md` Section 5:
+    - [x] Run `./mvnw clean package -DskipTests` to verify project stability. [SHA: 68b4fd8]
+    - [x] Update `CHANGELOG.md` (in Chinese). [SHA: 68b4fd8]
+    - [x] Set `metadata.json` status to "done" and rename ID. [SHA: 68b4fd8]
+    - [x] Move folder to `conductor/archive/`. [SHA: 68b4fd8]
+    - [x] Update `conductor/tracks.md` and move entry to Archive section. [SHA: 68b4fd8]
+    - [x] Execute final archiving commit. [SHA: 68b4fd8]
 

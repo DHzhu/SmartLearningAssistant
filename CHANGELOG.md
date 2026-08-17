@@ -18,6 +18,17 @@
 ### 移除
 - (在此记录已移除的功能)
 
+## [0.7.0] - 2026-08-17
+
+### 新增
+- **长期记忆与学习者画像体系 (Long-term Memory & Learner Persona)**：
+  - `UserMemory` 实体与 Flyway `V4__create_user_memory.sql` 数据表
+  - `MemoryExtractionService`：从学生对话中自动挖掘薄弱点 (WEAKNESS)、学习目标 (GOAL) 与偏好 (PREFERENCE)
+  - `UserPersonaService`：个性化画像组装与 Prompt 动态注入
+  - `MemoryController`：`/api/memory` 记忆管理 REST API 端点
+  - 增强 `RagService`：支持结合画像档案实现千人千面的差异化问答
+
+
 ## [0.6.0] - 2026-08-17
 
 ### 新增

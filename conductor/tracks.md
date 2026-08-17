@@ -16,11 +16,6 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 
 ## 🚀 Active Tracks
 
-- [ ] **Track: Long-term Memory & Persona (track_long_term_memory)** [in_progress]
-  *Link: [./tracks/track_long_term_memory/](./tracks/track_long_term_memory/)*
-  *Description: Build a background agent to extract user preferences and maintain long-term personalized memory.*
-  *Created: 2026-08-17* | *Priority: Medium*
-
 - [ ] **Track: LLMOps & Observability (track_llmops)** [in_progress]
   *Link: [./tracks/track_llmops/](./tracks/track_llmops/)*
   *Description: Integrate tracing tools like Langfuse or LangSmith to monitor LLM performance and hallucination rates.*
@@ -36,6 +31,11 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 (All tracks completed)
 
 ## ✅ Archive
+
+- [x] **Track: Long-term Memory & Persona (track_long_term_memory_20260817)** [done]
+  *Link: [./archive/track_long_term_memory_20260817/](./archive/track_long_term_memory_20260817/)*
+  *Description: Build a background agent to extract user preferences and maintain long-term personalized memory.*
+  *Created: 2026-08-17* | *Priority: Medium*
 
 - [x] **Track: Advanced RAG & Reranker (track_advanced_rag_20260817)** [done]
   *Link: [./archive/track_advanced_rag_20260817/](./archive/track_advanced_rag_20260817/)*
