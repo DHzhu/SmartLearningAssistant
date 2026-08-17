@@ -5,8 +5,8 @@
 - [x] **task-agentic-2**: Document agentic architecture and tool schemas in `spec.md`. [SHA: ] (1f49b80)
 
 ## 2. Preparation & Foundation
-- [ ] **task-agentic-3**: Create unit tests for tools (AccountToolTest, StudyPlannerToolTest) (TDD Red). [SHA: ]
-- [ ] **task-agentic-4**: Implement tool components (`AccountTool`, `KnowledgeSearchTool`, `StudyPlannerTool`). [SHA: ]
+- [x] **task-agentic-3**: Create unit tests for tools (AccountToolTest, StudyPlannerToolTest) (TDD Red). [SHA: ] (a46b2fe)
+- [x] **task-agentic-4**: Implement tool components (`AccountTool`, `KnowledgeSearchTool`, `StudyPlannerTool`). [SHA: ] (a46b2fe)
 
 ## 3. Implementation
 - [ ] **task-agentic-5**: Implement `AgenticChatService` with Spring AI tool routing and fallback. [SHA: ]
