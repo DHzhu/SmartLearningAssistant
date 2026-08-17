@@ -1,0 +1,15 @@
+【轨道任务审计记录】
+
+📋 变更概述
+feat(infra): 实现异步事件消息队列与账单对账引擎 [task-infra-3, task-infra-4, task-infra-5, task-infra-6]
+
+🎯 关联任务
+• task-infra-3
+• task-infra-4
+• task-infra-5
+• task-infra-6
+
+---
+Commit SHA: 0721aff
+Type: feat
+Files: 6 个文件已修改
