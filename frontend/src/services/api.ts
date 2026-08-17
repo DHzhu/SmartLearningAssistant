@@ -1,4 +1,4 @@
-import type { LoginRequest, LoginResponse } from '../types';
+import type { AgentChatResponse, LoginRequest, LoginResponse } from '../types';
 
 const BASE_URL = '/api';
 
@@ -53,3 +53,11 @@ export async function register(credentials: LoginRequest): Promise<LoginResponse
     body: JSON.stringify(credentials),
   });
 }
+
+export async function agentChat(message: string): Promise<AgentChatResponse> {
+  return request<AgentChatResponse>('/agent/chat', {
+    method: 'POST',
+    body: JSON.stringify({ message }),
+  });
+}
+

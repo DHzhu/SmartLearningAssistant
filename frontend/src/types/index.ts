@@ -36,3 +36,12 @@ export interface BillingLog {
   description: string;
   createdAt: string;
 }
+
+export interface AgentChatResponse {
+  content: string;
+  toolsUsed: string[];
+  tokensUsed: number;
+  error?: string;
+  message?: string;
+}
+

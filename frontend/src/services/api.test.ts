@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { login, register, setToken, removeToken } from './api';
+import { login, register, setToken, removeToken, agentChat } from './api';
 
 const mockFetch = vi.fn();
 vi.stubGlobal('fetch', mockFetch);
@@ -66,6 +66,29 @@ describe('API Service', () => {
     });
   });
 
+  describe('agentChat', () => {
+    it('should send agent chat request and return response', async () => {
+      const mockResponse = {
+        content: 'Your balance is 5000',
+        toolsUsed: ['AccountTool'],
+        tokensUsed: 20,
+      };
+
+      mockFetch.mockResolvedValueOnce({
+        ok: true,
+        json: () => Promise.resolve(mockResponse),
+      });
+
+      const result = await agentChat('check my balance');
+      expect(result).toEqual(mockResponse);
+      expect(mockFetch).toHaveBeenCalledWith('/api/agent/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: 'check my balance' }),
+      });
+    });
+  });
+
   describe('token management', () => {
     it('should store and retrieve token', () => {
       setToken('test-token');
@@ -79,3 +102,4 @@ describe('API Service', () => {
     });
   });
 });
+
