@@ -14,14 +14,20 @@ import org.springframework.stereotype.Service;
 public class RagService {
 
     private static final Logger log = LoggerFactory.getLogger(RagService.class);
+    private static final int CANDIDATE_TOP_K = 10;
     private static final int TOP_K = 3;
 
     private final Optional<ChatModel> chatModel;
     private final Optional<VectorStore> vectorStore;
+    private final com.smartlearning.assistant.chat.rerank.RerankerService rerankerService;
 
-    public RagService(Optional<ChatModel> chatModel, Optional<VectorStore> vectorStore) {
+    public RagService(
+            Optional<ChatModel> chatModel,
+            Optional<VectorStore> vectorStore,
+            com.smartlearning.assistant.chat.rerank.RerankerService rerankerService) {
         this.chatModel = chatModel;
         this.vectorStore = vectorStore;
+        this.rerankerService = rerankerService;
     }
 
     public List<Document> retrieveContext(String query, Long userId) {
@@ -32,17 +38,19 @@ public class RagService {
         try {
             var searchRequest = org.springframework.ai.vectorstore.SearchRequest.builder()
                     .query(query)
-                    .topK(TOP_K)
+                    .topK(CANDIDATE_TOP_K)
                     .build();
 
-            List<Document> results = vectorStore.get().similaritySearch(searchRequest);
+            List<Document> rawResults = vectorStore.get().similaritySearch(searchRequest);
 
-            return results.stream()
+            List<Document> candidates = rawResults.stream()
                     .filter(doc -> {
                         Object docUserId = doc.getMetadata().get("userId");
                         return docUserId != null && String.valueOf(userId).equals(docUserId.toString());
                     })
                     .toList();
+
+            return rerankerService.rerank(query, candidates, TOP_K);
         } catch (Exception e) {
             log.warn("Vector search failed for user {}: {}", userId, e.getMessage());
             return List.of();

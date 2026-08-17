@@ -17,12 +17,15 @@ public class VectorizationService {
 
     private final KnowledgeTaskRepository taskRepository;
     private final Optional<VectorStore> vectorStore;
+    private final com.smartlearning.assistant.knowledge.chunking.SemanticChunker semanticChunker;
 
     public VectorizationService(
             KnowledgeTaskRepository taskRepository,
-            Optional<VectorStore> vectorStore) {
+            Optional<VectorStore> vectorStore,
+            com.smartlearning.assistant.knowledge.chunking.SemanticChunker semanticChunker) {
         this.taskRepository = taskRepository;
         this.vectorStore = vectorStore;
+        this.semanticChunker = semanticChunker;
     }
 
     @Async("knowledgeTaskExecutor")
@@ -39,7 +42,7 @@ public class VectorizationService {
             }
 
             String text = extractTextFromS3(task.getS3Url());
-            List<String> chunks = splitText(text);
+            List<String> chunks = semanticChunker.chunkText(text, 500, 50);
 
             List<Document> documents = chunks.stream()
                     .map(chunk -> new Document(chunk,
@@ -66,15 +69,6 @@ public class VectorizationService {
 
     private String extractTextFromS3(String s3Url) {
         return "Extracted text from " + s3Url;
-    }
-
-    private List<String> splitText(String text) {
-        int chunkSize = 500;
-        java.util.List<String> chunks = new java.util.ArrayList<>();
-        for (int i = 0; i < text.length(); i += chunkSize) {
-            chunks.add(text.substring(i, Math.min(i + chunkSize, text.length())));
-        }
-        return chunks;
     }
 
     public List<Document> searchSimilar(String query, Long userId, int topK) {
