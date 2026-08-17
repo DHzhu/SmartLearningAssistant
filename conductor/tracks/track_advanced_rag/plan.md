@@ -13,9 +13,9 @@
 - [x] **task-rag-6**: Update tests and verify two-stage candidate retrieval. [SHA: ] (5baa3f6)
 
 ## 4. Verification & Hardening
-- [ ] **task-rag-7**: Verify 100% test pass and >80% coverage. [SHA: ]
-- [ ] **task-rag-8**: Performance & latency audit for re-ranking. [SHA: ]
-- [ ] **task-rag-9**: Code Review: Check memory safety and boundary slicing. [SHA: ]
+- [x] **task-rag-7**: Verify 100% test pass and >80% coverage. [SHA: ] (46d1638)
+- [x] **task-rag-8**: Performance & latency audit for re-ranking. [SHA: ] (46d1638)
+- [x] **task-rag-9**: Code Review: Check memory safety and boundary slicing. [SHA: ] (46d1638)
 
 ## 5. Track Closure & Archiving
 - [ ] **task-rag-10**: Follow Archive Protocol from `workflow.md` Section 5:
