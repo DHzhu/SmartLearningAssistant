@@ -16,16 +16,18 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 
 ## 🚀 Active Tracks
 
-- [ ] **Track: Infrastructure Optimization & MQ (track_infra_optimization)** [in_progress]
-  *Link: [./tracks/track_infra_optimization/](./tracks/track_infra_optimization/)*
-  *Description: Decouple document parsing with RabbitMQ/Kafka and implement final consistency checks for billing.*
-  *Created: 2026-08-17* | *Priority: Medium*
+(None)
 
 ## ⏳ Next Up
 
 (All tracks completed)
 
 ## ✅ Archive
+
+- [x] **Track: Infrastructure Optimization & MQ (track_infra_optimization_20260817)** [done]
+  *Link: [./archive/track_infra_optimization_20260817/](./archive/track_infra_optimization_20260817/)*
+  *Description: Decouple document parsing with RabbitMQ/Kafka and implement final consistency checks for billing.*
+  *Created: 2026-08-17* | *Priority: Medium*
 
 - [x] **Track: LLMOps & Observability (track_llmops_20260817)** [done]
   *Link: [./archive/track_llmops_20260817/](./archive/track_llmops_20260817/)*

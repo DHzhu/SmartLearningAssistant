@@ -18,6 +18,15 @@
 ### 移除
 - (在此记录已移除的功能)
 
+## [0.9.0] - 2026-08-17
+
+### 新增
+- **基础架构异步消息队列与账单对账引擎 (Infrastructure Optimization & MQ)**：
+  - `AsyncEventQueue`：非阻塞、轻量级高性能内存事件消息队列（支持多主题解耦与并发订阅）
+  - `KnowledgeTaskConsumer`：文档知识库向量化任务异步消息监听与处理消费者
+  - `BillingReconciliationService`：分布式最终一致性对账引擎，自动化比对 Redis 缓存额度与 PostgreSQL 扣费流水并修复数据漂移
+
+
 ## [0.8.0] - 2026-08-17
 
 ### 新增

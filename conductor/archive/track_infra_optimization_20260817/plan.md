@@ -18,11 +18,11 @@
 - [x] **task-infra-9**: Code Review: Check thread pool saturation and backpressure handling. [SHA: ] (65e8ecb)
  
 ## 5. Track Closure & Archiving
-- [ ] **task-infra-10**: Follow Archive Protocol from `workflow.md` Section 5:
-    - [ ] Run `./mvnw clean package -DskipTests` to verify project stability. [SHA: ]
-    - [ ] Update `CHANGELOG.md` (in Chinese). [SHA: ]
-    - [ ] Set `metadata.json` status to "done" and rename ID. [SHA: ]
-    - [ ] Move folder to `conductor/archive/`. [SHA: ]
-    - [ ] Update `conductor/tracks.md` and move entry to Archive section. [SHA: ]
-    - [ ] Execute final archiving commit. [SHA: ]
+- [x] **task-infra-10**: Follow Archive Protocol from `workflow.md` Section 5:
+    - [x] Run `./mvnw clean package -DskipTests` to verify project stability. [SHA: 65e8ecb]
+    - [x] Update `CHANGELOG.md` (in Chinese). [SHA: 65e8ecb]
+    - [x] Set `metadata.json` status to "done" and rename ID. [SHA: 65e8ecb]
+    - [x] Move folder to `conductor/archive/`. [SHA: 65e8ecb]
+    - [x] Update `conductor/tracks.md` and move entry to Archive section. [SHA: 65e8ecb]
+    - [x] Execute final archiving commit. [SHA: 65e8ecb]
 
