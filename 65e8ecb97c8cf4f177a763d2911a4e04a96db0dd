@@ -1,0 +1,14 @@
+【轨道任务审计记录】
+
+📋 变更概述
+test(infra): 完成异步消息队列与账单对账质量验证 [task-infra-7, task-infra-8, task-infra-9]
+
+🎯 关联任务
+• task-infra-7
+• task-infra-8
+• task-infra-9
+
+---
+Commit SHA: 65e8ecb
+Type: test
+Files: 1 个文件已修改
