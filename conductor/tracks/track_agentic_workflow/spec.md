@@ -26,7 +26,7 @@ Transform the system from a passive RAG assistant into an interactive AI Agent e
 - Coverage >80% with comprehensive unit tests for all tools and service orchestrator.
 
 ## 5. Success Criteria
-- [ ] Tools registered and executable by Spring AI ChatClient.
-- [ ] Agentic chat handles tool calls and returns synthesized responses.
-- [ ] Tests pass with >80% coverage.
+- [x] Tools registered and executable by Spring AI ChatClient.
+- [x] Agentic chat handles tool calls and returns synthesized responses.
+- [x] Tests pass with >80% coverage.
 
