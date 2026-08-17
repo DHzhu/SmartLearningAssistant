@@ -21,7 +21,7 @@ Upgrade the retrieval pipeline from naive vector search to an Advanced RAG archi
 - Test coverage >80%.
 
 ## 5. Success Criteria
-- [ ] `SemanticChunker` correctly chunks diverse text types without cutting sentences in half.
-- [ ] `RerankerService` accurately re-orders candidates to place highest-relevance documents first.
-- [ ] `RagService` integrates re-ranking and tests pass >80% coverage.
+- [x] `SemanticChunker` correctly chunks diverse text types without cutting sentences in half.
+- [x] `RerankerService` accurately re-orders candidates to place highest-relevance documents first.
+- [x] `RagService` integrates re-ranking and tests pass >80% coverage.
 
