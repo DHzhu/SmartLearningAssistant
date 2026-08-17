@@ -9,8 +9,8 @@
 - [x] **task-rag-4**: Implement `SemanticChunker` and `RerankerService`. [SHA: ] (120c085)
 
 ## 3. Implementation
-- [ ] **task-rag-5**: Integrate Reranker and SemanticChunker into `RagService` and `VectorizationService`. [SHA: ]
-- [ ] **task-rag-6**: Update tests and verify two-stage candidate retrieval. [SHA: ]
+- [x] **task-rag-5**: Integrate Reranker and SemanticChunker into `RagService` and `VectorizationService`. [SHA: ] (5baa3f6)
+- [x] **task-rag-6**: Update tests and verify two-stage candidate retrieval. [SHA: ] (5baa3f6)
 
 ## 4. Verification & Hardening
 - [ ] **task-rag-7**: Verify 100% test pass and >80% coverage. [SHA: ]
