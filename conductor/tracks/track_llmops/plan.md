@@ -13,9 +13,9 @@
 - [x] **task-llm-6**: Integrate telemetry recording into Chat and Agent execution paths. [SHA: ] (6660a68)
  
 ## 4. Verification & Hardening
-- [ ] **task-llm-7**: Verify 100% test pass and >80% coverage. [SHA: ]
-- [ ] **task-llm-8**: Verify Admin RBAC security protection on metrics endpoints. [SHA: ]
-- [ ] **task-llm-9**: Code Review: Check async persistence overhead and data retention. [SHA: ]
+- [x] **task-llm-7**: Verify 100% test pass and >80% coverage. [SHA: ] (0fbf90c)
+- [x] **task-llm-8**: Verify Admin RBAC security protection on metrics endpoints. [SHA: ] (0fbf90c)
+- [x] **task-llm-9**: Code Review: Check async persistence overhead and data retention. [SHA: ] (0fbf90c)
  
 ## 5. Track Closure & Archiving
 - [ ] **task-llm-10**: Follow Archive Protocol from `workflow.md` Section 5:
