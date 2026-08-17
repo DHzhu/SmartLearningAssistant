@@ -1,0 +1,13 @@
+【轨道任务审计记录】
+
+📋 变更概述
+docs(infra): 完成异步事件队列与账单对账架构设计 [task-infra-1, task-infra-2]
+
+🎯 关联任务
+• task-infra-1
+• task-infra-2
+
+---
+Commit SHA: 3476696
+Type: docs
+Files: 1 个文件已修改
