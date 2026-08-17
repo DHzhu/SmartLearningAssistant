@@ -13,9 +13,9 @@
 - [x] **task-mem-6**: Integrate persona injection into `RagService` and `AgenticChatService`. [SHA: ] (bfb10f4)
  
 ## 4. Verification & Hardening
-- [ ] **task-mem-7**: Verify 100% test pass and >80% coverage. [SHA: ]
-- [ ] **task-mem-8**: Multi-tenant memory data isolation verification. [SHA: ]
-- [ ] **task-mem-9**: Code Review: Check indexing and prompt token overhead. [SHA: ]
+- [x] **task-mem-7**: Verify 100% test pass and >80% coverage. [SHA: ] (68b4fd8)
+- [x] **task-mem-8**: Multi-tenant memory data isolation verification. [SHA: ] (68b4fd8)
+- [x] **task-mem-9**: Code Review: Check indexing and prompt token overhead. [SHA: ] (68b4fd8)
  
 ## 5. Track Closure & Archiving
 - [ ] **task-mem-10**: Follow Archive Protocol from `workflow.md` Section 5:
