@@ -1,0 +1,13 @@
+【轨道任务审计记录】
+
+📋 变更概述
+feat(agent): 实现智能体路由服务与API端点集成 [task-agentic-5, task-agentic-6]
+
+🎯 关联任务
+• task-agentic-5
+• task-agentic-6
+
+---
+Commit SHA: db5cffd
+Type: feat
+Files: 7 个文件已修改
