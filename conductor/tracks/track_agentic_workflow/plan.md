@@ -9,8 +9,8 @@
 - [x] **task-agentic-4**: Implement tool components (`AccountTool`, `KnowledgeSearchTool`, `StudyPlannerTool`). [SHA: ] (a46b2fe)
 
 ## 3. Implementation
-- [ ] **task-agentic-5**: Implement `AgenticChatService` with Spring AI tool routing and fallback. [SHA: ]
-- [ ] **task-agentic-6**: Integrate `AgenticChatService` into Controller endpoints and Frontend API. [SHA: ]
+- [x] **task-agentic-5**: Implement `AgenticChatService` with Spring AI tool routing and fallback. [SHA: ] (db5cffd)
+- [x] **task-agentic-6**: Integrate `AgenticChatService` into Controller endpoints and Frontend API. [SHA: ] (db5cffd)
 
 ## 4. Verification & Hardening
 - [ ] **task-agentic-7**: Verify 100% test pass and >80% coverage for agentic module. [SHA: ]
