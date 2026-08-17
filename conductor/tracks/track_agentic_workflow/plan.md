@@ -13,9 +13,9 @@
 - [x] **task-agentic-6**: Integrate `AgenticChatService` into Controller endpoints and Frontend API. [SHA: ] (db5cffd)
 
 ## 4. Verification & Hardening
-- [ ] **task-agentic-7**: Verify 100% test pass and >80% coverage for agentic module. [SHA: ]
-- [ ] **task-agentic-8**: Manual & integration validation of tool execution and token deduction. [SHA: ]
-- [ ] **task-agentic-9**: Code Review: Check multi-tenant tool safety and style compliance. [SHA: ]
+- [x] **task-agentic-7**: Verify 100% test pass and >80% coverage for agentic module. [SHA: ] (4f03637)
+- [x] **task-agentic-8**: Manual & integration validation of tool execution and token deduction. [SHA: ] (4f03637)
+- [x] **task-agentic-9**: Code Review: Check multi-tenant tool safety and style compliance. [SHA: ] (4f03637)
 
 ## 5. Track Closure & Archiving
 - [ ] **task-agentic-10**: Follow Archive Protocol from `workflow.md` Section 5:
