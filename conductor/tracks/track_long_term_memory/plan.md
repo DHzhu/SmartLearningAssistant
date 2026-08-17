@@ -5,12 +5,12 @@
 - [x] **task-mem-2**: Document Memory entity and API contracts in `spec.md`. [SHA: ] (c8f685d)
  
 ## 2. Preparation & Foundation
-- [ ] **task-mem-3**: Create unit tests for `UserPersonaServiceTest` and `MemoryExtractionServiceTest` (TDD Red). [SHA: ]
-- [ ] **task-mem-4**: Create `UserMemory` entity, Flyway migration, and `UserMemoryRepository`. [SHA: ]
+- [x] **task-mem-3**: Create unit tests for `UserPersonaServiceTest` and `MemoryExtractionServiceTest` (TDD Red). [SHA: ] (bfb10f4)
+- [x] **task-mem-4**: Create `UserMemory` entity, Flyway migration, and `UserMemoryRepository`. [SHA: ] (bfb10f4)
  
 ## 3. Implementation
-- [ ] **task-mem-5**: Implement `MemoryExtractionService`, `UserPersonaService`, and `MemoryController`. [SHA: ]
-- [ ] **task-mem-6**: Integrate persona injection into `RagService` and `AgenticChatService`. [SHA: ]
+- [x] **task-mem-5**: Implement `MemoryExtractionService`, `UserPersonaService`, and `MemoryController`. [SHA: ] (bfb10f4)
+- [x] **task-mem-6**: Integrate persona injection into `RagService` and `AgenticChatService`. [SHA: ] (bfb10f4)
  
 ## 4. Verification & Hardening
 - [ ] **task-mem-7**: Verify 100% test pass and >80% coverage. [SHA: ]
