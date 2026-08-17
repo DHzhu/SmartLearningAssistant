@@ -13,9 +13,9 @@
 - [x] **task-infra-6**: Implement `BillingReconciliationService` for ledger consistency. [SHA: ] (0721aff)
  
 ## 4. Verification & Hardening
-- [ ] **task-infra-7**: Verify 100% test pass and >80% coverage. [SHA: ]
-- [ ] **task-infra-8**: End-to-end event queue decoupled ingestion verification. [SHA: ]
-- [ ] **task-infra-9**: Code Review: Check thread pool saturation and backpressure handling. [SHA: ]
+- [x] **task-infra-7**: Verify 100% test pass and >80% coverage. [SHA: ] (65e8ecb)
+- [x] **task-infra-8**: End-to-end event queue decoupled ingestion verification. [SHA: ] (65e8ecb)
+- [x] **task-infra-9**: Code Review: Check thread pool saturation and backpressure handling. [SHA: ] (65e8ecb)
  
 ## 5. Track Closure & Archiving
 - [ ] **task-infra-10**: Follow Archive Protocol from `workflow.md` Section 5:
