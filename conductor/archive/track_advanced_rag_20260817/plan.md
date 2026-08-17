@@ -18,11 +18,11 @@
 - [x] **task-rag-9**: Code Review: Check memory safety and boundary slicing. [SHA: ] (46d1638)
 
 ## 5. Track Closure & Archiving
-- [ ] **task-rag-10**: Follow Archive Protocol from `workflow.md` Section 5:
-    - [ ] Run `./mvnw clean package -DskipTests` to verify project stability. [SHA: ]
-    - [ ] Update `CHANGELOG.md` (in Chinese). [SHA: ]
-    - [ ] Set `metadata.json` status to "done" and rename ID. [SHA: ]
-    - [ ] Move folder to `conductor/archive/`. [SHA: ]
-    - [ ] Update `conductor/tracks.md` and move entry to Archive section. [SHA: ]
-    - [ ] Execute final archiving commit. [SHA: ]
+- [x] **task-rag-10**: Follow Archive Protocol from `workflow.md` Section 5:
+    - [x] Run `./mvnw clean package -DskipTests` to verify project stability. [SHA: 46d1638]
+    - [x] Update `CHANGELOG.md` (in Chinese). [SHA: 46d1638]
+    - [x] Set `metadata.json` status to "done" and rename ID. [SHA: 46d1638]
+    - [x] Move folder to `conductor/archive/`. [SHA: 46d1638]
+    - [x] Update `conductor/tracks.md` and move entry to Archive section. [SHA: 46d1638]
+    - [x] Execute final archiving commit. [SHA: 46d1638]
 

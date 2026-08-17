@@ -1,8 +1,8 @@
 {
-  "id": "track_advanced_rag",
+  "id": "track_advanced_rag_20260817",
   "title": "Advanced RAG & Reranker",
   "description": "Integrate BGE-Reranker, GraphRAG, and Semantic Chunking to improve retrieval relevance.",
-  "status": "in_progress",
+  "status": "done",
   "created_at": "2026-08-17",
   "priority": "medium",
   "tags": []

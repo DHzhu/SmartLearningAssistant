@@ -16,11 +16,6 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 
 ## 🚀 Active Tracks
 
-- [ ] **Track: Advanced RAG & Reranker (track_advanced_rag)** [in_progress]
-  *Link: [./tracks/track_advanced_rag/](./tracks/track_advanced_rag/)*
-  *Description: Integrate BGE-Reranker, GraphRAG, and Semantic Chunking to improve retrieval relevance.*
-  *Created: 2026-08-17* | *Priority: Medium*
-
 - [ ] **Track: Long-term Memory & Persona (track_long_term_memory)** [in_progress]
   *Link: [./tracks/track_long_term_memory/](./tracks/track_long_term_memory/)*
   *Description: Build a background agent to extract user preferences and maintain long-term personalized memory.*
@@ -41,6 +36,11 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 (All tracks completed)
 
 ## ✅ Archive
+
+- [x] **Track: Advanced RAG & Reranker (track_advanced_rag_20260817)** [done]
+  *Link: [./archive/track_advanced_rag_20260817/](./archive/track_advanced_rag_20260817/)*
+  *Description: Integrate BGE-Reranker, GraphRAG, and Semantic Chunking to improve retrieval relevance.*
+  *Created: 2026-08-17* | *Priority: Medium*
 
 - [x] **Track: Agentic Workflow & Tool Calling (track_agentic_workflow_20260817)** [done]
   *Link: [./archive/track_agentic_workflow_20260817/](./archive/track_agentic_workflow_20260817/)*
