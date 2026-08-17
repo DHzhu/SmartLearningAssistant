@@ -1,0 +1,13 @@
+【轨道任务审计记录】
+
+📋 变更概述
+feat(rag): 实现语义切块与重排评分服务 [task-rag-3, task-rag-4]
+
+🎯 关联任务
+• task-rag-3
+• task-rag-4
+
+---
+Commit SHA: 120c085
+Type: feat
+Files: 4 个文件已修改
