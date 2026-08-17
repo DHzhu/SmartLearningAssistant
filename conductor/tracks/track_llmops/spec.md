@@ -22,8 +22,8 @@ Introduce an end-to-end LLMOps tracing and telemetry engine to capture latency b
 - Test coverage >80%.
 
 ## 5. Success Criteria
-- [ ] `LlmTraceRecord` entity and repository implemented.
-- [ ] `LlmMetricsService` correctly logs traces and calculates aggregated metrics.
-- [ ] `AdminMetricsController` passes security tests and RBAC verification.
-- [ ] Test suite passes with >80% coverage.
+- [x] `LlmTraceRecord` entity and repository implemented.
+- [x] `LlmMetricsService` correctly logs traces and calculates aggregated metrics.
+- [x] `AdminMetricsController` passes security tests and RBAC verification.
+- [x] Test suite passes with >80% coverage.
 
