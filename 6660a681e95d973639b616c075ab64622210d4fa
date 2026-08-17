@@ -1,0 +1,15 @@
+【轨道任务审计记录】
+
+📋 变更概述
+feat(llmops): 实现LLM链路指标采集、聚合统计与管理员端点 [task-llm-3, task-llm-4, task-llm-5, task-llm-6]
+
+🎯 关联任务
+• task-llm-3
+• task-llm-4
+• task-llm-5
+• task-llm-6
+
+---
+Commit SHA: 6660a68
+Type: feat
+Files: 7 个文件已修改
