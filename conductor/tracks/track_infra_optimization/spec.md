@@ -21,7 +21,7 @@ Decouple heavyweight asynchronous tasks (vector embedding, knowledge ingestion) 
 - Test coverage >80%.
 
 ## 5. Success Criteria
-- [ ] `AsyncEventQueue` and `EventMessage` implemented with producer/consumer tests.
-- [ ] `BillingReconciliationService` verifies ledger and fixes discrepancy.
-- [ ] Full test suite passes with >80% coverage.
+- [x] `AsyncEventQueue` and `EventMessage` implemented with producer/consumer tests.
+- [x] `BillingReconciliationService` verifies ledger and fixes discrepancy.
+- [x] Full test suite passes with >80% coverage.
 
