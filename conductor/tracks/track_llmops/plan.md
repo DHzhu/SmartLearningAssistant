@@ -5,12 +5,12 @@
 - [x] **task-llm-2**: Document LLMOps schema and admin endpoints in `spec.md`. [SHA: ] (d9cc042)
  
 ## 2. Preparation & Foundation
-- [ ] **task-llm-3**: Create unit tests for `LlmMetricsServiceTest` and `AdminMetricsControllerTest` (TDD Red). [SHA: ]
-- [ ] **task-llm-4**: Create `LlmTraceRecord` entity, Flyway migration, and repository. [SHA: ]
+- [x] **task-llm-3**: Create unit tests for `LlmMetricsServiceTest` and `AdminMetricsControllerTest` (TDD Red). [SHA: ] (6660a68)
+- [x] **task-llm-4**: Create `LlmTraceRecord` entity, Flyway migration, and repository. [SHA: ] (6660a68)
  
 ## 3. Implementation
-- [ ] **task-llm-5**: Implement `LlmMetricsService` and `AdminMetricsController`. [SHA: ]
-- [ ] **task-llm-6**: Integrate telemetry recording into Chat and Agent execution paths. [SHA: ]
+- [x] **task-llm-5**: Implement `LlmMetricsService` and `AdminMetricsController`. [SHA: ] (6660a68)
+- [x] **task-llm-6**: Integrate telemetry recording into Chat and Agent execution paths. [SHA: ] (6660a68)
  
 ## 4. Verification & Hardening
 - [ ] **task-llm-7**: Verify 100% test pass and >80% coverage. [SHA: ]
