@@ -16,11 +16,6 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 
 ## 🚀 Active Tracks
 
-- [ ] **Track: Agentic Workflow & Tool Calling (track_agentic_workflow)** [in_progress]
-  *Link: [./tracks/track_agentic_workflow/](./tracks/track_agentic_workflow/)*
-  *Description: Implement Function Calling and Multi-Agent router to transition from simple RAG to an active agent.*
-  *Created: 2026-08-17* | *Priority: Medium*
-
 - [ ] **Track: Advanced RAG & Reranker (track_advanced_rag)** [in_progress]
   *Link: [./tracks/track_advanced_rag/](./tracks/track_advanced_rag/)*
   *Description: Integrate BGE-Reranker, GraphRAG, and Semantic Chunking to improve retrieval relevance.*
@@ -46,6 +41,11 @@ This file tracks all major development tracks. Follow the **Standard Entry Forma
 (All tracks completed)
 
 ## ✅ Archive
+
+- [x] **Track: Agentic Workflow & Tool Calling (track_agentic_workflow_20260817)** [done]
+  *Link: [./archive/track_agentic_workflow_20260817/](./archive/track_agentic_workflow_20260817/)*
+  *Description: Implement Function Calling and Multi-Agent router to transition from simple RAG to an active agent.*
+  *Created: 2026-08-17* | *Priority: Medium*
 
 - [x] **Track: RBAC 角色权限与安全接入 (track_rbac_20260611)** [done]
   *Link: [./archive/track_rbac_20260611/](./archive/track_rbac_20260611/)*

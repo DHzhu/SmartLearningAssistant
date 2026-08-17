@@ -18,7 +18,17 @@
 ### 移除
 - (在此记录已移除的功能)
 
-## [0.1.0] - 2026-06-11
+## [0.5.0] - 2026-08-17
+
+### 新增
+- **智能体工作流与工具调用 (Agentic Workflow & Tool Calling)**：
+  - `AccountTool`：用户 Token 配额与余额动态查询工具
+  - `StudyPlannerTool`：自适应学习排期与提分目标计算工具
+  - `KnowledgeSearchTool`：私有 pgvector 动态语义检索工具
+  - `AgenticChatService`：多工具意图分发引擎与 LLM 融合生成，支持 Fallback 机制
+  - `AgentController`：`/api/agent/chat` 智能体交互端点与多租户权限校验
+  - 前端 API 拓展：新增 `agentChat` 服务端点封装与类型系统支持
+
 
 ### 新增
 - **后端 RBAC 鉴权系统**：基于 Spring Boot 4.1 + Spring Security 的无状态 JWT 鉴权

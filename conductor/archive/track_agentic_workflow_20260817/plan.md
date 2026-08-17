@@ -18,11 +18,11 @@
 - [x] **task-agentic-9**: Code Review: Check multi-tenant tool safety and style compliance. [SHA: ] (4f03637)
 
 ## 5. Track Closure & Archiving
-- [ ] **task-agentic-10**: Follow Archive Protocol from `workflow.md` Section 5:
-    - [ ] Run `./mvnw clean package -DskipTests` to verify project stability. [SHA: ]
-    - [ ] Update `CHANGELOG.md` (in Chinese). [SHA: ]
-    - [ ] Set `metadata.json` status to "done" and rename ID. [SHA: ]
-    - [ ] Move folder to `conductor/archive/`. [SHA: ]
-    - [ ] Update `conductor/tracks.md` and move entry to Archive section. [SHA: ]
-    - [ ] Execute final archiving commit. [SHA: ]
+- [x] **task-agentic-10**: Follow Archive Protocol from `workflow.md` Section 5:
+    - [x] Run `./mvnw clean package -DskipTests` to verify project stability. [SHA: 4f03637]
+    - [x] Update `CHANGELOG.md` (in Chinese). [SHA: 4f03637]
+    - [x] Set `metadata.json` status to "done" and rename ID. [SHA: 4f03637]
+    - [x] Move folder to `conductor/archive/`. [SHA: 4f03637]
+    - [x] Update `conductor/tracks.md` and move entry to Archive section. [SHA: 4f03637]
+    - [x] Execute final archiving commit. [SHA: 4f03637]
 
