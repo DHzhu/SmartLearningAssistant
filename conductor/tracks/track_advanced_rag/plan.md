@@ -5,8 +5,8 @@
 - [x] **task-rag-2**: Document Advanced RAG architecture in `spec.md`. [SHA: ] (37e591c)
 
 ## 2. Preparation & Foundation
-- [ ] **task-rag-3**: Create unit tests for `SemanticChunkerTest` and `RerankerServiceTest` (TDD Red). [SHA: ]
-- [ ] **task-rag-4**: Implement `SemanticChunker` and `RerankerService`. [SHA: ]
+- [x] **task-rag-3**: Create unit tests for `SemanticChunkerTest` and `RerankerServiceTest` (TDD Red). [SHA: ] (120c085)
+- [x] **task-rag-4**: Implement `SemanticChunker` and `RerankerService`. [SHA: ] (120c085)
 
 ## 3. Implementation
 - [ ] **task-rag-5**: Integrate Reranker and SemanticChunker into `RagService` and `VectorizationService`. [SHA: ]
