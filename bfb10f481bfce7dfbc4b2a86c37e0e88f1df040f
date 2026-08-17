@@ -1,0 +1,15 @@
+【轨道任务审计记录】
+
+📋 变更概述
+feat(memory): 实现用户长期记忆提取、管理与Prompt上下文注入 [task-mem-3, task-mem-4, task-mem-5, task-mem-6]
+
+🎯 关联任务
+• task-mem-3
+• task-mem-4
+• task-mem-5
+• task-mem-6
+
+---
+Commit SHA: bfb10f4
+Type: feat
+Files: 11 个文件已修改
