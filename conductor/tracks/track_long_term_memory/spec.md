@@ -20,8 +20,8 @@ Implement a persistent Long-term Memory and Learner Persona system to dynamicall
 - Test coverage >80%.
 
 ## 5. Success Criteria
-- [ ] UserMemory entity and repository created.
-- [ ] Memory extraction accurately detects learning goals and weak points.
-- [ ] Persona injected into RAG & Agent prompt context.
-- [ ] All tests pass with >80% coverage.
+- [x] UserMemory entity and repository created.
+- [x] Memory extraction accurately detects learning goals and weak points.
+- [x] Persona injected into RAG & Agent prompt context.
+- [x] All tests pass with >80% coverage.
 
